@@ -10,4 +10,6 @@ columns = st.multiselect(
     ['trust', 'fear'])
 st.line_chart(sent_df[columns])
 st.text('Click on column title to change order')
-sent_df[columns]
+c = sent_df.reset_index()
+c['year'].astype('int64')
+c
