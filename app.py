@@ -9,6 +9,5 @@ columns = st.multiselect(
     ['anger', 'anticipation','disgust', 'fear', 'joy','negative', 'positive', 'sadness', 'surprise', 'trust' ],
     ['trust', 'fear'])
 st.line_chart(sent_df[columns])
-st.text('You can change the order to ascending or descending in this \
-    table by clicking on a column title.')
+st.text('Click on column title to change order')
 sent_df[columns]
