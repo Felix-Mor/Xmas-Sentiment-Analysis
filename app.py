@@ -7,7 +7,7 @@ sent_df = df[['year','anger', 'anticipation','disgust', 'fear', 'joy','negative'
 st.title('Christmas Speech Sentiment Analysis')
 st.write('The following analysis of the Royal Christmas Speeches 1997-2022 was completed using the NRC Lexicon to generate a score for a series of emotions. Select some emotions from the drop down menu to see the corresponding scores by year on the graph below.')
 columns = st.multiselect(
-    'Pick some emotions',
+    'Pick/remove some emotions',
     ['anger', 'anticipation','disgust', 'fear', 'joy','negative', 'positive', 'sadness', 'surprise', 'trust' ],
     ['trust', 'fear'])
 st.line_chart(sent_df[columns], use_container_width=True)
