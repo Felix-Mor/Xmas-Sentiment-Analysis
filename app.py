@@ -1,7 +1,6 @@
 import streamlit as st
 import pandas as pd
 import matplotlib.pyplot as plt
-from PIL import Image
 from wordcloud import WordCloud, STOPWORDS, ImageColorGenerator
 df = pd.read_csv('sentiment.csv')
 sent_df = df[['year','anger', 'anticipation','disgust', 'fear', 'joy','negative', 'positive', 'sadness', 'surprise', 'trust' ]].set_index('year')
